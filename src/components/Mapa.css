@@ -1,0 +1,31 @@
+
+.svg11494 path{
+   transition: 1s;
+   stroke: #474647;
+   stroke-width: .6;
+}
+
+.svg11494 path:hover{
+    fill: #01011f;
+    stroke: #01011f;
+    cursor: pointer;
+    transition: .5;
+    stroke-width: 10;
+}
+.svg11494{
+    width: 100%; 
+  height: auto;
+  transition: 1s;
+  fill: hsl(0, 2%, 71%);
+  
+}
+#select{
+  fill: #01011f;
+    stroke: #01011f;
+  cursor: pointer;
+  transition: 1s;
+  stroke-width: 10;
+}
+.mun_2608909{
+  fill: #40a6f6 ;
+}
