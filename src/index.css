@@ -3,7 +3,7 @@
   padding: 0;
 }
 body{
-  overflow-x: hidden;
+  overflow-y: hidden;
   background-image: url('./img/Fundo.png');
   background-size: cover;
 }

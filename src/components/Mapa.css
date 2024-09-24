@@ -17,7 +17,15 @@
   height: auto;
   transition: 1s;
   fill: hsl(0, 2%, 71%);
-  
+ animation: svg 2s ease;
+}
+@keyframes svg {
+  0%{
+    transform: translatex(-100%);
+  }
+  100%{
+    transform: translate(0) ;
+  }
 }
 #select{
   fill: #01011f;

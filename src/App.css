@@ -14,6 +14,15 @@ header{
   width: 100%;
   height: 9vh;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: menu 1s ease;
+}
+@keyframes menu {
+  0%{
+    transform: translateY(-80vh);
+  }
+  100%{
+    transform: translate(0) ;
+  }
 }
 nav{
   width: 100%;
@@ -37,10 +46,20 @@ section{
   overflow-x: hidden;
   z-index: 1;
   padding: 5px;
+  animation: section 2s ease;
+}
+@keyframes section {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
 }
 .containermapa{
   margin-top: 8vh;
 }
+
 main{
   display: flex;
   align-items: self-start;
@@ -111,6 +130,15 @@ label{
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  animation: desc 1s ease;
+}
+@keyframes desc {
+  0%{
+    transform: translateY(180vh);
+  }
+  100%{
+    transform: translate(0) ;
+  }
 }
 .bloco1,.bloco2,.bloco3{
   width: 35%;
@@ -152,4 +180,5 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }

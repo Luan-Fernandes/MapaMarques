@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaMagnifyingGlass } from "react-icons/fa6";
-const Main = ({nameCidade,setNameCidade,filterCidades,munclicado,setmunclicado}) => {
+const Main = ({nameCidade,setNameCidade,filterCidades,munclicado,setmunclicado,setConcorretes,setTexto}) => {
   console.log(nameCidade)
   return (
       <section>
@@ -12,7 +12,7 @@ const Main = ({nameCidade,setNameCidade,filterCidades,munclicado,setmunclicado})
       </form>
       <div className='components'>
         {filterCidades.map(cidade => (
-          <div onClick={() => [setmunclicado(cidade.Municipio),setNameCidade(cidade.Municipio)]} key={cidade.id} className='components-filhos'><FaMagnifyingGlass />{cidade.Municipio} </div>
+          <div onClick={() => [setmunclicado(cidade.Municipio),setNameCidade(cidade.Municipio),setConcorretes(cidade.concorrentes),setTexto(cidade.Texto)]} key={cidade.id} className='components-filhos'><FaMagnifyingGlass />{cidade.Municipio} </div>
         ))}
         
       </div>
